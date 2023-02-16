@@ -1,0 +1,38 @@
+﻿@page "/order/save"
+@page "/order/save/{id:int}"
+@inherits Bases.OrderSaveBase
+
+@if(Id == null)
+{
+    <h3>Add new Sales Order</h3>
+}
+else
+{
+    <h3>Edit Order @SalesOrder.Name</h3>    
+}
+
+<br />
+<hr />
+<a href="/" class="btn btn-info">Back</a>
+<EditForm Model="@SalesOrder" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator/>
+    <div class="form-group row">
+        <label for="orderName" class="col-sm-3 col-form-label">
+            Name
+        </label>
+        <div class="col-sm-9">
+            <InputText id="orderName" class="form-control" placeholder="Order Name" @bind-Value="SalesOrder.Name" />
+            <ValidationMessage For="@(() => SalesOrder.Name)"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="lastName" class="col-sm-3 col-form-label">
+            State
+        </label>
+        <div class="col-sm-9">
+            <InputText id="lastName" class="form-control" placeholder="Order State" @bind-Value="SalesOrder.State" />
+            <ValidationMessage For="@(() => SalesOrder.State)"/>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</EditForm>

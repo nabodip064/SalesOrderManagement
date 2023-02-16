@@ -1,0 +1,37 @@
+﻿@page "/window/list"
+@inherits Bases.WindowListBase
+
+<h3>Windows</h3>
+<br />
+<hr />
+<a href="@($"window/save")" class="btn btn-info">Add New</a>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">SL</th>
+      <th scope="col">Name</th>
+      <th scope="col">Quantity Of Windows</th>
+      <th scope="col">Total SubElements</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    @{int index = 1;}
+    @foreach(var window in Windows)
+    {
+        <tr>
+            <th>@index</th>
+            <td>@window.Name</td>
+            <td>@window.QuantityOfWindows</td>
+            <td>                
+                <a href="@($"subelement/list/{window.ID}")" class="btn btn-info btn-sm">@window.TotalSubElements</a>
+            </td>
+            <td>
+                <a href="@($"window/save/{window.ID}")" class="btn btn-primary btn-sm">Edit</a>
+                <button class="btn btn-danger btn-sm" type="button" @onclick="() => ActionDelete(window.ID)">Delete</button>
+            </td>
+        </tr> 
+        index++;
+    }
+  </tbody>
+</table>

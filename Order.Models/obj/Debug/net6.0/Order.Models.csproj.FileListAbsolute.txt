@@ -1,0 +1,12 @@
+D:\Programming\Practice\Jobs\OrderManagement\Order.Models\bin\Debug\net6.0\Order.Models.deps.json
+D:\Programming\Practice\Jobs\OrderManagement\Order.Models\bin\Debug\net6.0\Order.Models.dll
+D:\Programming\Practice\Jobs\OrderManagement\Order.Models\bin\Debug\net6.0\Order.Models.pdb
+D:\Programming\Practice\Jobs\OrderManagement\Order.Models\obj\Debug\net6.0\Order.Models.csproj.AssemblyReference.cache
+D:\Programming\Practice\Jobs\OrderManagement\Order.Models\obj\Debug\net6.0\Order.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Practice\Jobs\OrderManagement\Order.Models\obj\Debug\net6.0\Order.Models.AssemblyInfoInputs.cache
+D:\Programming\Practice\Jobs\OrderManagement\Order.Models\obj\Debug\net6.0\Order.Models.AssemblyInfo.cs
+D:\Programming\Practice\Jobs\OrderManagement\Order.Models\obj\Debug\net6.0\Order.Models.csproj.CoreCompileInputs.cache
+D:\Programming\Practice\Jobs\OrderManagement\Order.Models\obj\Debug\net6.0\Order.Models.dll
+D:\Programming\Practice\Jobs\OrderManagement\Order.Models\obj\Debug\net6.0\refint\Order.Models.dll
+D:\Programming\Practice\Jobs\OrderManagement\Order.Models\obj\Debug\net6.0\Order.Models.pdb
+D:\Programming\Practice\Jobs\OrderManagement\Order.Models\obj\Debug\net6.0\ref\Order.Models.dll

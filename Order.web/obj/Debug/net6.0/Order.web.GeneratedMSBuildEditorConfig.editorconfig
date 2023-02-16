@@ -1,0 +1,59 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = Order.web
+build_property.RootNamespace = Order.web
+build_property.ProjectDir = D:\Programming\Practice\Jobs\OrderManagement\Order.web\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Programming\Practice\Jobs\OrderManagement\Order.web
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Programming/Practice/Jobs/OrderManagement/Order.web/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming/Practice/Jobs/OrderManagement/Order.web/Pages/OrderList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming/Practice/Jobs/OrderManagement/Order.web/Pages/OrderSave.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJTYXZlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming/Practice/Jobs/OrderManagement/Order.web/Pages/SubElementList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViRWxlbWVudExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming/Practice/Jobs/OrderManagement/Order.web/Pages/SubElementSave.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViRWxlbWVudFNhdmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming/Practice/Jobs/OrderManagement/Order.web/Pages/WindowList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2luZG93TGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming/Practice/Jobs/OrderManagement/Order.web/Pages/WindowSave.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2luZG93U2F2ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming/Practice/Jobs/OrderManagement/Order.web/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming/Practice/Jobs/OrderManagement/Order.web/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vw8d95ynbv
+
+[D:/Programming/Practice/Jobs/OrderManagement/Order.web/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-5vd0pd3hwy

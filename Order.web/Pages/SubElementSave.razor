@@ -1,0 +1,69 @@
+﻿@page "/subelement/save"
+@page "/subelement/save/{id:int}"
+@inherits Bases.SubElementSaveBase
+
+@if(Id == null)
+{
+    <h3>Add new SubElement</h3>
+}
+else
+{
+    <h3>Edit Sub Element @SubElementItem.Type</h3>    
+}
+
+<br />
+<hr />
+<a href="/subelement/list" class="btn btn-info">Back</a>
+<EditForm Model="@SubElementItem" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator/>
+    <div class="form-group row">
+        <label for="subElementType" class="col-sm-3 col-form-label">
+            Type
+        </label>
+        <div class="col-sm-9">
+            <InputText id="subElementType" class="form-control" placeholder="SubElement Type" @bind-Value="SubElementItem.Type" />
+            <ValidationMessage For="@(() => SubElementItem.Type)"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="subElement" class="col-sm-3 col-form-label">
+            Element
+        </label>
+        <div class="col-sm-9">
+            <InputNumber id="subElement" class="form-control" placeholder="Sub Elemenet" @bind-Value="SubElementItem.Element" />
+            <ValidationMessage For="@(() => SubElementItem.Element)"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="subElementWidth" class="col-sm-3 col-form-label">
+            Width
+        </label>
+        <div class="col-sm-9">
+            <InputNumber id="subElementWidth" class="form-control" placeholder="Sub Elemenet Width" @bind-Value="SubElementItem.Width" />
+            <ValidationMessage For="@(() => SubElementItem.Width)"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="subElementHeight" class="col-sm-3 col-form-label">
+            Height
+        </label>
+        <div class="col-sm-9">
+            <InputNumber id="subElementHeight" class="form-control" placeholder="Sub Elemenet Height" @bind-Value="SubElementItem.Height" />
+            <ValidationMessage For="@(() => SubElementItem.Height)"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="windowItem" class="col-sm-3 col-form-label">
+            Sales Order
+        </label>
+        <div class="col-sm-9">
+            <InputSelect id="windowItem" class="form-control" placeholder="Quantity of Windows" @bind-Value="SubElementItem.WindowID" >
+                @foreach (var window in Windows)
+                {
+                    <option value="@window.ID">@window.Name</option>
+                }
+            </InputSelect>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</EditForm>

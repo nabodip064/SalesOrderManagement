@@ -1,0 +1,40 @@
+﻿@page "/subelement/list"
+@page "/subelement/list/{windowId:int}"
+@inherits Bases.SubElementListBase
+
+<h3>SubElement List</h3>
+
+<br />
+<hr />
+
+<a href="subelement/save" class="btn btn-info">Add New</a>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">SL</th>
+      <th scope="col">Element</th>
+      <th scope="col">Type</th>
+      <th scope="col">Width</th>
+      <th scope="col">Height</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+      @{int index = 1;}
+    @foreach(var subElement in SubElementDtos)
+    {
+        <tr>
+            <th>@index</th>
+            <td>@subElement.Element</td>
+            <td>@subElement.Type</td>
+            <td>@subElement.Width</td>
+            <td>@subElement.Height</td>
+            <td>
+                <a href="@($"subelement/save/{subElement.ID}")" class="btn btn-primary btn-sm">Edit</a>
+                <button class="btn btn-danger btn-sm" type="button" @onclick="() => ActionDelete(subElement.ID)">Delete</button>
+            </td>
+        </tr> 
+        index++;
+    }
+  </tbody>
+</table>

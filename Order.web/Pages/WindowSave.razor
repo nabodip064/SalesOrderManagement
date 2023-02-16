@@ -1,0 +1,51 @@
+﻿@page "/window/save"
+@page "/window/save/{id:int}"
+@inherits Bases.WindowSaveBase
+
+@if(Id == null)
+{
+    <h3>Add new Window</h3>
+}
+else
+{
+    <h3>Edit Window @Window.Name</h3>    
+}
+
+<br />
+<hr />
+<a href="/window/list" class="btn btn-info">Back</a>
+<EditForm Model="@Window" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator/>
+    <div class="form-group row">
+        <label for="windowName" class="col-sm-3 col-form-label">
+            Name
+        </label>
+        <div class="col-sm-9">
+            <InputText id="windowName" class="form-control" placeholder="Order Name" @bind-Value="Window.Name" />
+            <ValidationMessage For="@(() => Window.Name)"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="quantityOfWindows" class="col-sm-3 col-form-label">
+            Quantity of Windows
+        </label>
+        <div class="col-sm-9">
+            <InputNumber id="quantityOfWindows" class="form-control" placeholder="Quantity of Windows" @bind-Value="Window.QuantityOfWindows" />
+            <ValidationMessage For="@(() => Window.QuantityOfWindows)"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="selesItem" class="col-sm-3 col-form-label">
+            Sales Order
+        </label>
+        <div class="col-sm-9">
+            <InputSelect id="selesItem" class="form-control" placeholder="Quantity of Windows" @bind-Value="Window.SalesOrderID" >
+                @foreach (var order in SalesOrders)
+                {
+                    <option value="@order.ID">@order.Name</option>
+                }
+            </InputSelect>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</EditForm>

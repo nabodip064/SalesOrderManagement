@@ -1,0 +1,36 @@
+﻿@page "/"
+@inherits Bases.OrderListBase
+
+<h3>Sales Orders</h3>
+<br />
+<hr />
+<a href="@($"order/save")" class="btn btn-info">Add New</a>
+@if(SalesOrders != null)
+{ 
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">SL</th>
+          <th scope="col">Name</th>
+          <th scope="col">State</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+          @{int index = 1;}
+        @foreach(var order in SalesOrders)
+        {
+            <tr>
+                <th>@index</th>
+                <td>@order.Name</td>
+                <td>@order.State</td>
+                <td>
+                    <a href="@($"order/save/{order.ID}")" class="btn btn-primary btn-sm">Edit</a>
+                    <button class="btn btn-danger btn-sm" type="button" @onclick="() => ActionDelete(order.ID)">Delete</button>
+                </td>
+            </tr> 
+            index++;
+        }
+      </tbody>
+    </table> 
+}
